@@ -1,0 +1,15 @@
+{
+  "name": "next-app-complete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "next-app-complete": "index.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
