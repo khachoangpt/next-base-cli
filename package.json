@@ -1,6 +1,6 @@
 {
   "name": "next-base-cli",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A CLI tool to Create a Next.js Base",
   "scripts": {
     "dev": "tsx src/index.ts",
@@ -17,9 +17,9 @@
     "nextjs"
   ],
   "repository": {
-    "url": "https://github.com/khachoangpt/pinero-cli"
+    "url": "https://github.com/khachoangpt/next-base-cli"
   },
-  "homepage": "https://github.com/khachoangpt/pinero-cli#readme",
+  "homepage": "https://github.com/khachoangpt/next-base-cli#readme",
   "author": "khachoangpt",
   "license": "ISC",
   "dependencies": {
