@@ -1,12 +1,12 @@
 import spawn from 'cross-spawn'
 import { Command } from 'src/constants'
 import {
-  askForI18n,
   askForPackageManager,
   askForProjectName,
   clean,
   clone,
 } from 'src/utils'
+import { askForUseUILibrary } from 'src/utils/ask-ui-library'
 import yargs from 'yargs'
 
 export const createCommand = async () => {
@@ -21,9 +21,9 @@ export const createCommand = async () => {
 const handleCreateCommand = async () => {
   const packageManager = await askForPackageManager()
   const projectName = await askForProjectName()
-  const i18n = await askForI18n()
-  // const components = await askForUseComponentLibrary()
-  await clone({ projectName, i18n })
+  // const i18n = await askForI18n()
+  const uiLibrary = await askForUseUILibrary()
+  await clone({ projectName, uiLibrary })
   await clean(projectName)
   spawn(packageManager, ['install'], {
     cwd: `./${projectName}`,

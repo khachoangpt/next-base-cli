@@ -7,3 +7,7 @@ export enum PackageManager {
   YARN = 'yarn',
   PNPM = 'pnpm',
 }
+
+export enum UI {
+  SHADCN = 'shadcn',
+}

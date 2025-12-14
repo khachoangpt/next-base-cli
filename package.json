@@ -1,6 +1,6 @@
 {
   "name": "next-base-cli",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A CLI tool to Create a Next.js Base",
   "scripts": {
     "dev": "tsx src/index.ts",
